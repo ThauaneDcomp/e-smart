@@ -1,4 +1,4 @@
-<div class="bg-white d-flex align-items-center justify-content-center margin-top-60">
+<div class="bg-white d-flex align-items-center justify-content-center">
     <div class="col-6 offset bg-light border rounded padding-0">
         <nav class="navbar navbar-expand-lg navbar-light navbar-dark bg-dark">
             <a class="navbar-brand" href="#">Smart e-PING</a>
@@ -9,7 +9,7 @@
                     </li>
                 </ul>
 
-                <ul class="navbar-nav ml-auto">
+                <!-- <ul class="navbar-nav ml-auto">
                     <li id="confirm-exclud" class="nav-item text-success invisible" style="padding: 6px 6px 0 0"><i class="material-icons">done</i></li>
                     <li class="nav-item">
                         <div id="dropdown-entities" class="dropdown">
@@ -31,7 +31,7 @@
                             Resetar cash
                         </a>
                     </li>
-                </ul>
+                </ul> -->
             </div>
         </nav>
 

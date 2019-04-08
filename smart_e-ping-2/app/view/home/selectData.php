@@ -3,7 +3,7 @@
     $tbActive = $data['tbActive'];
 ?>
 
-<div class="bg-white d-flex align-items-center justify-content-center margin-top-60">
+<div class="bg-white d-flex align-items-center justify-content-center">
     <div class="col-6 offset bg-light border rounded padding-0">
         <nav class="navbar navbar-expand-lg navbar-light navbar-dark bg-dark">
             <a class="navbar-brand" href="#">Smart e-PING</a>
@@ -14,13 +14,13 @@
                     </li>
                 </ul>
 
-                <ul class="navbar-nav ml-auto">
+                <!-- <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a id="reset-session" href="http://localhost/smart_e-ping-2/public/home/resetSession" class="btn btn-danger text-white">
                             Resetar cash
                         </a>
                     </li>
-                </ul>
+                </ul> -->
             </div>
         </nav>
 

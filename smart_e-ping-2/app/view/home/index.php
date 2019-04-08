@@ -1,4 +1,4 @@
-<?php
+<?php 
     session_start();
     $database = isset($_SESSION['database']) ? $_SESSION['database'] : "";
     $url = isset($_SESSION['url']) ? $_SESSION['url'] : "";
@@ -6,7 +6,7 @@
     $password = isset($_SESSION['password']) ? $_SESSION['password'] : "";
 ?>
 
-<div class="bg-white d-flex align-items-center justify-content-center margin-top-60">
+<div class="bg-white d-flex align-items-center justify-content-center">
     <div class="col-6 offset bg-light border rounded padding-0">
         <nav class="navbar navbar-expand-lg navbar-light navbar-dark bg-dark">
             <a class="navbar-brand" href="#">Smart e-PING</a>
@@ -17,13 +17,13 @@
                     </li>
                 </ul>
 
-                <ul class="navbar-nav ml-auto">
+                <!-- <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a id="reset-session" href="http://localhost/smart_e-ping-2/public/home/resetSession" class="btn btn-danger text-white">
                             Resetar cash
                         </a>
                     </li>
-                </ul>
+                </ul> -->
             </div>
         </nav>
 
@@ -32,7 +32,7 @@
             <?=$data['progressNavigation']?>
         </div>
 
-        <div class="container-form col-10 offset-1 margin-top-60">
+        <div class="container-form col-10 offset-1">
             <h3 class="text-secondary text-center">Seja bem-vindo ao Framework Smart e-PING. Preencha os campos referentes a base de dados que deseja realizar a interoperabilidade.</h3>
 
             <form method="POST" id="formConnect" class="text-secondary">
@@ -70,4 +70,3 @@
 
     </div>
 </div>
-

@@ -9,7 +9,7 @@ class Home extends Controller{
 
         //Loading component's
         $progressNavigation = $this->component('progress_navigation', [
-            'stage' => array('Conexão da base de dados', 'Seleção dos dados', 'Opções', 'Autorização'),
+            'stage' => array('Conexão da base de dados', 'Seleção dos dados', 'Opções'),
             'currentStep' => 0
         ]);
 
@@ -27,7 +27,7 @@ class Home extends Controller{
 
         //Loading component's
         $progressNavigation = $this->component('progress_navigation', [
-            'stage' => array('Conexão da base de dados', 'Seleção dos dados', 'Opções', 'Autorização'),
+            'stage' => array('Conexão da base de dados', 'Seleção dos dados', 'Opções'),
             'currentStep' => 1
         ]);
 
@@ -117,7 +117,7 @@ class Home extends Controller{
 
         //Loading component's
         $progressNavigation = $this->component('progress_navigation', [
-            'stage' => array('Conexão da base de dados', 'Seleção dos dados', 'Opções', 'Autorização'),
+            'stage' => array('Conexão da base de dados', 'Seleção dos dados', 'Opções'),
             'currentStep' => 2
         ]);
 
