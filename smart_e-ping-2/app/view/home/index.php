@@ -1,4 +1,4 @@
-<?php 
+<?php
     session_start();
     $database = isset($_SESSION['database']) ? $_SESSION['database'] : "";
     $url = isset($_SESSION['url']) ? $_SESSION['url'] : "";
@@ -33,7 +33,7 @@
         </div>
 
         <div class="container-form col-10 offset-1">
-            <h3 class="text-secondary text-center">Seja bem-vindo ao Framework Smart e-PING. Preencha os campos referentes a base de dados que deseja realizar a interoperabilidade.</h3>
+            <h5 class="text-secondary text-center">Seja bem-vindo ao Framework Smart e-PING. Preencha os campos referentes a base de dados que deseja realizar a interoperabilidade.</h5>
 
             <form method="POST" id="formConnect" class="text-secondary">
                 <div class="form-group">

@@ -40,7 +40,7 @@
         </div>
 
         <div class="container-form col-10 offset-1 margin-top-60">
-            <h3 class="text-secondary text-center">Informe a base de dados ORION que deseja realizar a submissão dos dados.</h3>
+            <h5 class="text-secondary text-center">Informe a base de dados ORION que deseja realizar a submissão dos dados.</h5>
 
             <form id="formSelectData" class="text-secondary">
                 <div class="form-group">

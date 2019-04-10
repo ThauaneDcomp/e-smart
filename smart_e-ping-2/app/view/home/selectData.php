@@ -29,10 +29,10 @@
         </div>
 
         <div class="container-form col-10 offset-1 margin-top-60">
-            <h3 class="text-secondary text-center">Selecione as tabelas e colunas que deseja realizar interoperabilidade. Você pode realizar sua escolha em mais de uma tabela ou coluna.</h3>
+            <h5 class="text-secondary text-center">Selecione as tabelas e colunas que deseja realizar interoperabilidade. Você pode realizar sua escolha em mais de uma tabela ou coluna.</h5>
 
             <form id="formSelectData" class="text-secondary">
-                <div class="row margin-top-60">
+                <div class="row">
                     <div class="col-md-6">
                         <h6>Tabelas disponíveis<span class="text-danger"> *</span></h6>
 
