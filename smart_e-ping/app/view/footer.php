@@ -8,6 +8,12 @@
 <script src="<?=$this->server?>/<?=$this->nameApp?>/public/js/api-fiware.js"></script>
 <!-- HOME -->
 <script src="<?=$this->server?>/<?=$this->nameApp?>/public/js/home.js"></script>
-
+<?php
+    if(!empty($data['scripts'])){
+        foreach($data['scripts'] AS $script) {
+            echo "<script src='{$this->server}/{$this->nameApp}/public/js/{$script}.js'></script>";
+        }
+    }
+?>
 </body>
 </html>

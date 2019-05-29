@@ -24,7 +24,6 @@ class CRUD extends Controller {
 
         $sql = "";
 
-
         $dataJSON = [];
         foreach ($select as $item) {
             $i = 0;
@@ -53,7 +52,7 @@ class CRUD extends Controller {
         //Enviando dados para o ORION
         $status = RequisicaoHTTP::insert($dataJSON, $orionIP, $orionPort);
 
-//        echo json_encode($status);
+       echo json_encode($status);
     }
 
     public function toJSON($rows, $tb, $column, $database){
@@ -171,6 +170,56 @@ class CRUD extends Controller {
             default:
                 return $type;
                 break;
+        }
+    }
+
+    public function createJSONFile(){
+         session_start();
+         $select = $_SESSION['select'];
+
+         $database = $_SESSION['database'];
+         $url = $_SESSION['url'];
+         $user = $_SESSION['user'];
+         $password = $_SESSION['password'];
+
+
+         $this->model('Connection');
+         $conn = Connection::connect($database, $url, $user, $password);
+         $conn->set_charset("utf8");
+
+         $sql = "";
+
+         $dataJSON = [];
+         foreach ($select as $item) {
+             $i = 0;
+             $len = count($item['column']);
+
+             $sql = "SELECT ";
+             foreach ($item['column'] as $col){
+                 if($i == $len - 1){
+                     $sql .= $col['field'] . ' ';
+                 }else{
+                     $sql .= $col['field'] . ', ';
+                 }
+
+                 $i++;
+             }
+
+             $sql .= "FROM " . $item['table'] . ";";
+
+             $result = Connection::query($conn, $sql);
+
+             $dataJSON = $this->toJSON($result, $item['table'], $item['column'], $database);
+         }
+
+        $conn->close();
+
+        $file_name = "./js/file.json";
+
+        if(file_put_contents($file_name, json_encode($dataJSON, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE))){
+            echo json_encode(true);
+        }else{
+            echo json_encode(false);
         }
     }
 }

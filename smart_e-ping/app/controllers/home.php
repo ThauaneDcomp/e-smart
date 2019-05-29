@@ -125,7 +125,7 @@ class Home extends Controller{
         $this->view('home/options', ['progressNavigation' => $progressNavigation, 'table' => $table, 'database' => $_SESSION['database']]);
 
         //Loading footer
-        $this->view('footer');
+        $this->view('footer', ['scripts' => ['option']]);
     }
 
     public function testingConnection(){

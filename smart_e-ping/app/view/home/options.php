@@ -19,15 +19,15 @@
 
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <?php
-                                foreach ($data['table'] as $tb){
-                                    echo "<a class='dropdown-item' href='#' data-database='{$data['database']}'>{$tb['Tables_in_' . $_SESSION['database']]}</a>";
-                                }
+                                // foreach ($data['table'] as $tb){
+                                //     echo "<a class='dropdown-item' href='#' data-database='{$data['database']}'>{$tb['Tables_in_' . $_SESSION['database']]}</a>";
+                                // }
                                 ?>
                             </div>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a id="reset-session" href="http://localhost/smart_e-ping-2/public/home/resetSession" class="btn btn-danger margin-left-15 text-white">
+                        <a id="reset-session" href="http://localhost/smart_e-ping-3/public/home/resetSession" class="btn btn-danger margin-left-15 text-white">
                             Resetar cash
                         </a>
                     </li>
@@ -61,19 +61,19 @@
                     <div class="col-6">
                         <div class="form-group">
                             <label for="orionIp">IP<span class="text-danger"> *</span></label>
-                            <input type="text" class="form-control" id="orionIp" name="orionIp" value="http://130.206.119.42" placeholder="10.0.22">
+                            <input type="text" class="form-control" id="orionIp" name="orionIp" value="localhost" placeholder="10.0.22">
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="form-group">
                             <label for="orionPort">Porta<span class="text-danger"> *</span></label>
-                            <input type="number" class="form-control" id="orionPort" name="orionPort" value="10026" placeholder="1026">
+                            <input type="number" class="form-control" id="orionPort" name="orionPort" value="1026" placeholder="1026">
                         </div>
                     </div>
                 </div>
 
                 <div>
-                    <label>Clique aqui para fazer o <i>download</i> do <a href="#">arquivo JSON</a></label>
+                    <label>Clique aqui para fazer o <i>download</i> do <a target="_blank" href="<?=$this->server?>/<?=$this->nameApp?>/public/js/file.json" download>arquivo JSON</a></label>
                 </div>
 
                 <div class="form-group">

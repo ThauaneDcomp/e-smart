@@ -1,5 +1,5 @@
 server = "http://localhost/";
-nameApp = "smart_e-ping-2";
+nameApp = "smart_e-ping-3";
 
 /* ======================== */
 /* ======== INDEX ========= */
@@ -248,7 +248,8 @@ $('#btOptions').click(function () {
             info.removeClass("invisible");
             info.addClass("show");
         }
-    }).fail(function () {
+    }).fail(function (data) {
+        console.log(data);
         info.html("Erro: erro na tradução da base de dados!");
         info.addClass("alert-danger");
         info.removeClass("invisible");
@@ -262,7 +263,6 @@ $('#dropdown-entities .dropdown-menu a').click(function () {
         ret = get('v2/entities?type=' + $(this).attr('data-database') + "_" + $(this).html());
 
         ret.always(function (data) {
-
             $(data).each(function () {
                 deleteFiware('v2/entities/' + this.id);
             });

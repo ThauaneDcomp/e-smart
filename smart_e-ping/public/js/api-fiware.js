@@ -1,4 +1,4 @@
-var baseURL = "http://130.206.119.42:10026/";
+var baseURL = "http://localhost:1026/";
 
 function get(ngsiv2 = 'v2/entities') {
     var ret = $.get(baseURL + ngsiv2, function (date) {//Success

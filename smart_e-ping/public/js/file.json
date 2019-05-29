@@ -1,0 +1,134 @@
+[
+    {
+        "id": "agenda_usuarios_0",
+        "type": "gpweb_agenda_usuarios",
+        "usuario_id": {
+            "type": "Integer",
+            "value": "1"
+        },
+        "agenda_id": {
+            "type": "Integer",
+            "value": "1"
+        },
+        "aceito": {
+            "type": "tinyint",
+            "value": "1"
+        },
+        "data": {
+            "type": "Text",
+            "value": "2015-07-24 19:14:04"
+        }
+    },
+    {
+        "id": "agenda_usuarios_1",
+        "type": "gpweb_agenda_usuarios",
+        "usuario_id": {
+            "type": "Integer",
+            "value": "2"
+        },
+        "agenda_id": {
+            "type": "Integer",
+            "value": "1"
+        },
+        "aceito": {
+            "type": "tinyint",
+            "value": "0"
+        }
+    },
+    {
+        "id": "agenda_usuarios_2",
+        "type": "gpweb_agenda_usuarios",
+        "usuario_id": {
+            "type": "Integer",
+            "value": "3"
+        },
+        "agenda_id": {
+            "type": "Integer",
+            "value": "1"
+        },
+        "aceito": {
+            "type": "tinyint",
+            "value": "0"
+        }
+    },
+    {
+        "id": "agenda_usuarios_3",
+        "type": "gpweb_agenda_usuarios",
+        "usuario_id": {
+            "type": "Integer",
+            "value": "4"
+        },
+        "agenda_id": {
+            "type": "Integer",
+            "value": "1"
+        },
+        "aceito": {
+            "type": "tinyint",
+            "value": "0"
+        }
+    },
+    {
+        "id": "agenda_usuarios_4",
+        "type": "gpweb_agenda_usuarios",
+        "usuario_id": {
+            "type": "Integer",
+            "value": "5"
+        },
+        "agenda_id": {
+            "type": "Integer",
+            "value": "1"
+        },
+        "aceito": {
+            "type": "tinyint",
+            "value": "0"
+        }
+    },
+    {
+        "id": "agenda_usuarios_5",
+        "type": "gpweb_agenda_usuarios",
+        "usuario_id": {
+            "type": "Integer",
+            "value": "6"
+        },
+        "agenda_id": {
+            "type": "Integer",
+            "value": "1"
+        },
+        "aceito": {
+            "type": "tinyint",
+            "value": "0"
+        }
+    },
+    {
+        "id": "agenda_usuarios_6",
+        "type": "gpweb_agenda_usuarios",
+        "usuario_id": {
+            "type": "Integer",
+            "value": "7"
+        },
+        "agenda_id": {
+            "type": "Integer",
+            "value": "1"
+        },
+        "aceito": {
+            "type": "tinyint",
+            "value": "0"
+        }
+    },
+    {
+        "id": "agenda_usuarios_7",
+        "type": "gpweb_agenda_usuarios",
+        "usuario_id": {
+            "type": "Integer",
+            "value": "8"
+        },
+        "agenda_id": {
+            "type": "Integer",
+            "value": "1"
+        },
+        "aceito": {
+            "type": "tinyint",
+            "value": "0"
+        }
+    }
+]
